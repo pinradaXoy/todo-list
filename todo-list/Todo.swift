@@ -13,9 +13,8 @@ class Todo: Identifiable {
     
     var id: UUID = UUID()
     var title: String
-    var isDone: Bool = false
-    init(id: UUID, title: String, isDone: Bool) {
-        
+    var isDone: Bool
+    init(title: String, isDone: Bool) {
         self.title = title
         self.isDone = isDone
     }
